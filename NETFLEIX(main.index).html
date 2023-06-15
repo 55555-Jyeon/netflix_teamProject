@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="./project_css.CSS" />
+    <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div><img src="./img/logo.png" width="110px" height="50px" /></div>
+      <div>
+        <a>홈</a>
+        <a href="#">시리즈</a>
+        <a href="#">영화</a>
+        <a href="#">NEW!요즘 대세 콘텐츠</a>
+        <a href="#">내가 찜한 콘텐츠</a>
+        <a href="#">언어별로 찾아보기</a>
+      </div>
+      <div class="container" style="top: 15px">
+        <div>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </div>
+        <div>
+          <a href="./고객센터&로그인/넷플릭스고객센터/NETFLIX고객센터.html"
+            ><i class="fa-regular fa-bell" style="color: #ffffff"></i
+          ></a>
+        </div>
+        <div class="correct_login">
+          <a href="./고객센터&로그인/넷플릭스로그인/login.html">로그인</a>
+          <!-- <img src="./img/home.png" width="32px" height="32px" style="border-radius: 6px" /> -->
+        </div>
+        <!-- <select style="background-color: black">
+          <option value=""></option>
+          <option value="아빠">아빠</option>
+          <option value="엄마">엄마</option>
+          <option value="동생">동생</option>
+          <option value="친구">친구</option>
+          <option value="프로필관리">프로필관리</option>
+          <option value="프로필이전">프로필이전</option>
+          <option value="계정">계정</option>
+          <option value="고객센터">고객센터</option>
+        </select> -->
+      </div>
+    </header>
+    <main>
+      <div class="main_contents">
+        <div class="main_text">
+          <img src="./img/800.png" />
+          <div class="main_btn">
+            <button
+              id="btn_play"
+              onclick="location.href='./NETFLIX_WINDOW.ver_merged/asset/영화_메인/구미호뎐/구미호뎐_예고편.mp4'"
+            >
+              ▶ 재생
+            </button>
+            <button id="btn_info" onclick="location.href='./NETFLIX_WINDOW.ver_merged/html/Netflix_구미호뎐.html'">
+              <img src="./img/info.png" />상세 정보
+            </button>
+          </div>
+
+          <p>oo님의 취향저격 베스트 콘텐츠</p>
+          <div class="main_imgs">
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img1.webp"
+                onmouseover="scaleImage(this,0)"
+                onmouseout="resetImage(this,0)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,0)"
+                onmouseout="resetImage(this.previousElementSibling,0)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/낮과밤/낫과밤(예고편).mp4">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_낮과밤.html">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>82% 일치</span> 에피소드 10개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>어두운 • 긴장감 넘치는 • TV 프로그램SF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img2.jpg"
+                onmouseover="scaleImage(this,1)"
+                onmouseout="resetImage(this,1)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,1)"
+                onmouseout="resetImage(this.previousElementSibling,1)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/웬즈데이/웬즈데이(예고편).mp4">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_웬즈데이.html">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>97% 일치</span> 시즌 1개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>다크 코미디 • 아마추어 형사 & 탐정 • 미국 작품</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img3.webp"
+                onmouseover="scaleImage(this,2)"
+                onmouseout="resetImage(this,2)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,2)"
+                onmouseout="resetImage(this.previousElementSibling,2)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a
+                        href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/애나벨/[애나벨_ 인형의 주인] 메인 예고편.mp4"
+                      >
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_에나벨.html">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p>1시간 38분</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>으스스한 • 불길한 • 초자연 현상을 다룬 호러</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img4.webp"
+                onmouseover="scaleImage(this,3)"
+                onmouseout="resetImage(this,3)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,3)"
+                onmouseout="resetImage(this.previousElementSibling,3)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/나쁜엄마/나쁜엄마(예고편).mp4">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_나쁜엄마.html">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>99% 일치</span> 에피소드 14개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>힐링 • 달콤 쌉싸름 • 드라마 장르</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img17.webp"
+                onmouseover="scaleImage(this,4)"
+                onmouseout="resetImage(this,4)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,4)"
+                onmouseout="resetImage(this.previousElementSibling,4)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="#">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>97% 일치</span> 에피소드 16개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>드라마 장르 • 멀티캐스팅 • 환생</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img18.jpg"
+                onmouseover="scaleImage(this,5)"
+                onmouseout="resetImage(this,5)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,5)"
+                onmouseout="resetImage(this.previousElementSibling,5)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="#">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>94% 일치</span> 에피소드 9개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>긴박감 넘치는 • 흥미진진 • 리얼리티 시리즈</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img19.jpg"
+                onmouseover="scaleImage(this,6)"
+                onmouseout="resetImage(this,6)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,6)"
+                onmouseout="resetImage(this.previousElementSibling,6)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="#">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>92% 일치</span> 에피소드 9개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>액션 대폭발 • 능수능란 • 어드벤처</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inline_div">
+              <img
+                class="hidden_img"
+                src="./img/img20.jpg"
+                onmouseover="scaleImage(this,7)"
+                onmouseout="resetImage(this,7)"
+              />
+              <div
+                class="hidden_div"
+                onmouseover="scaleImage(this.previousElementSibling,7)"
+                onmouseout="resetImage(this.previousElementSibling,7)"
+              >
+                <div class="hidden_icon" style="display: none">
+                  <div>
+                    <div class="sort">
+                      <a href="#">
+                        <img src="./img/icon1.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon2.png" />
+                      </a>
+                      <a href="#">
+                        <img src="./img/icon3.png" />
+                      </a>
+                    </div>
+                    <div class="sort2">
+                      <a href="#">
+                        <img src="./img/icon4.png" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="p_sort">
+                    <p><span>93% 일치</span> 시즌 2개</p>
+                  </div>
+                  <div class="p_sort2">
+                    <p>거부할 수 없는 이끌림 • 로맨틱 • 리얼리티 시리즈</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_sub_contents">
+        <p>oo님의 시청 중인 콘텐츠</p>
+        <div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img5.jpg"
+              onmouseover="scaleImage(this,8)"
+              onmouseout="resetImage(this,8)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,8)"
+              onmouseout="resetImage(this.previousElementSibling,8)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/엄브렐러아카데미/엄브렐러아카데미(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_엄브렐러아카데미.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>80% 일치</span> 시즌 3개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>발상의 전환 • 색다른 • TV 프로그램SF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img6.jpg"
+              onmouseover="scaleImage(this,9)"
+              onmouseout="resetImage(this,9)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,9)"
+              onmouseout="resetImage(this.previousElementSibling,9)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/치히로상/치히로상_예고편.mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_치히로상.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p>2시간 11분</p>
+                </div>
+                <div class="p_sort2">
+                  <p>잔잔한 • 거부할 수 없는 이끌림 • 드라마 장르</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img7.webp"
+              onmouseover="scaleImage(this,10)"
+              onmouseout="resetImage(this,10)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,10)"
+              onmouseout="resetImage(this.previousElementSibling,10)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/빨간풍선/[예고]드라마 빨간 풍선.mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_빨간풍선.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>74% 일치</span> 에피소드 20개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>드라마 장르 • 위기의 가족 • 한국 작품</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img8.jpg"
+              onmouseover="scaleImage(this,11)"
+              onmouseout="resetImage(this,11)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,11)"
+              onmouseout="resetImage(this.previousElementSibling,11)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a
+                      href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/스마트폰을떨어뜨렸을뿐인데/스마트폰을 떨어뜨렸을 뿐인데 _ 예고편 .mp4"
+                    >
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_스마트폰을떨어뜨렸을뿐인데.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>80% 일치</span> 1시간 57분</p>
+                </div>
+                <div class="p_sort2">
+                  <p>긴장감 넘치는 • 미스테리 • 심리게임</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img21.jpg"
+              onmouseover="scaleImage(this,12)"
+              onmouseout="resetImage(this,12)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,12)"
+              onmouseout="resetImage(this.previousElementSibling,12)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>93% 일치</span> 에피소드 6개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>위트 있는 • 거부할 수 없는 이끌림 • 시대극</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img22.jpg"
+              onmouseover="scaleImage(this,13)"
+              onmouseout="resetImage(this,13)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,13)"
+              onmouseout="resetImage(this.previousElementSibling,13)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/웬즈데이/웬즈데이(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_웬즈데이.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>97% 일치</span> 에피소드 1개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>다크 코미디 • 아마추어 형사 & 탐정 • 미국 작품</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img23.jpg"
+              onmouseover="scaleImage(this,14)"
+              onmouseout="resetImage(this,14)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,14)"
+              onmouseout="resetImage(this.previousElementSibling,14)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>85% 일치</span> 에피소드 10개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>셀렘 주의 • 유쾌 발랄 • 청춘극</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img24.jpg"
+              onmouseover="scaleImage(this,15)"
+              onmouseout="resetImage(this,15)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,15)"
+              onmouseout="resetImage(this.previousElementSibling,15)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>94% 일치</span> 2021 시즌 1개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>드라마 장르 • 긴장감 넘치는 • 한국 작품</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>지금 뜨는 콘텐츠</p>
+        <div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img9.webp"
+              onmouseover="scaleImage(this,16)"
+              onmouseout="resetImage(this,16)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,16)"
+              onmouseout="resetImage(this.previousElementSibling,16)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/대행사/대행사(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_대행사.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>97% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>응원하고픈 • 진심어린 • 드라마 장르</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img10.webp"
+              onmouseover="scaleImage(this,17)"
+              onmouseout="resetImage(this,17)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,17)"
+              onmouseout="resetImage(this.previousElementSibling,17)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/괴물/[괴물]_메인 예고편.mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_괴물.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>82% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>어두운 • 긴장감 넘치는 • 스릴러</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img11.jpg"
+              onmouseover="scaleImage(this,18)"
+              onmouseout="resetImage(this,18)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,18)"
+              onmouseout="resetImage(this.previousElementSibling,18)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/소년심판/소년심판(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_소년심판.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>88% 일치</span> 에피소드 10개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>드라마 장르 • 점입가경 스릴러 • 법정</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img12.webp"
+              onmouseover="scaleImage(this,19)"
+              onmouseout="resetImage(this,19)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,19)"
+              onmouseout="resetImage(this.previousElementSibling,19)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/나의아저씨/나의 아저씨(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_나의아저씨.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>95% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>힐링 • 감상적 • 드라마 장르</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img25.jpg"
+              onmouseover="scaleImage(this,20)"
+              onmouseout="resetImage(this,20)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,20)"
+              onmouseout="resetImage(this.previousElementSibling,20)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>98% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>어두운 • 드라마 장르 • 복수</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img26.webp"
+              onmouseover="scaleImage(this,21)"
+              onmouseout="resetImage(this,21)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,21)"
+              onmouseout="resetImage(this.previousElementSibling,21)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>97% 일치</span> 에피소드 14개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>셀렘주의 • 리얼 인생극장 • 연작</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img27.webp"
+              onmouseover="scaleImage(this,22)"
+              onmouseout="resetImage(this,22)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,22)"
+              onmouseout="resetImage(this.previousElementSibling,22)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>96% 일치</span> 에피소드 5개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>폭력적인 • 어두운 • 스릴러</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img28.jpg"
+              onmouseover="scaleImage(this,23)"
+              onmouseout="resetImage(this,23)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,23)"
+              onmouseout="resetImage(this.previousElementSibling,23)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>95% 일치</span> 시즌 1개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>무서운 • 긴장감 넘치는 • 호러</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>오늘 대한민국의 TOP10 시리즈</p>
+        <div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img13.jpg"
+              onmouseover="scaleImage(this,24)"
+              onmouseout="resetImage(this,24)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,24)"
+              onmouseout="resetImage(this.previousElementSibling,24)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/택배기사/택배기사(예고편).mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_택배기사.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>98% 일치</span> 에피소드 6개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>디스토피아 • 어두운 • TV 프로그램SF</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img14.webp"
+              onmouseover="scaleImage(this,25)"
+              onmouseout="resetImage(this,25)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,25)"
+              onmouseout="resetImage(this.previousElementSibling,25)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/닥터차정숙/[1차 티저]_ 닥터 차정숙 .mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_닥터 차정숙.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>98% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>진심 어린 • 드라마 장르 • 의학</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img77.webp"
+              onmouseover="scaleImage(this,26)"
+              onmouseout="resetImage(this,26)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,26)"
+              onmouseout="resetImage(this.previousElementSibling,26)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/라라랜드/[라라랜드] 메인 예고편.mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_라라랜드.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>2시간 7분</span></p>
+                </div>
+                <div class="p_sort2">
+                  <p>거부할 수 없는 이끌림 • 로맨틱</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img16.webp"
+              onmouseover="scaleImage(this,27)"
+              onmouseout="resetImage(this,27)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,27)"
+              onmouseout="resetImage(this.previousElementSibling,27)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="./NETFLIX_WINDOW.ver_merged/asset/영화_메인/가면의여왕/[가면의 여왕]_메인 예고편.mp4">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="./NETFLIX_WINDOW.ver_merged/html/Netflix_가면의 여왕.html">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>89% 일치</span> 에피소드 16개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>드라마 장르 • 멀티캐스팅 • 그들만의 비밀</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img29.webp"
+              onmouseover="scaleImage(this,28)"
+              onmouseout="resetImage(this,28)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,28)"
+              onmouseout="resetImage(this.previousElementSibling,28)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>95% 일치</span> 에피소드 4개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>응원하고픈 • 감명을 주는 • 드라마 장르 애니</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img30.webp"
+              onmouseover="scaleImage(this,29)"
+              onmouseout="resetImage(this,29)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,29)"
+              onmouseout="resetImage(this.previousElementSibling,29)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>98% 일치</span> 에피소드 12개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>기분 좋아지는 • 리얼리티 시리즈 • 팝 컬처</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img31.jpg"
+              onmouseover="scaleImage(this,30)"
+              onmouseout="resetImage(this,30)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,30)"
+              onmouseout="resetImage(this.previousElementSibling,30)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p><span>96% 일치</span> 2020 시즌 2개</p>
+                </div>
+                <div class="p_sort2">
+                  <p>폭력적인 • 섬뜩한 • 사극</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline_div2">
+            <img
+              class="hidden_img2"
+              src="./img/img32.webp"
+              onmouseover="scaleImage(this,31)"
+              onmouseout="resetImage(this,31)"
+            />
+            <div
+              class="hidden_div2"
+              onmouseover="scaleImage(this.previousElementSibling,31)"
+              onmouseout="resetImage(this.previousElementSibling,31)"
+            >
+              <div class="hidden_icon" style="display: none">
+                <div>
+                  <div class="sort">
+                    <a href="#">
+                      <img src="./img/icon1.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon2.png" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/icon3.png" />
+                    </a>
+                  </div>
+                  <div class="sort2">
+                    <a href="#">
+                      <img src="./img/icon4.png" />
+                    </a>
+                  </div>
+                </div>
+                <div class="p_sort">
+                  <p>1시간 36분</p>
+                </div>
+                <div class="p_sort2">
+                  <p>으스스한 • 불길한 • 초자연 현상을 다룬 호러</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // 공통 함수 시작
+        // 이미지 hover할 경우 아이콘 보이게 설정
+        function scaleImage(element, index) {
+          element.style.transform = "scale(1.4)";
+
+          const hiddenIcon2 = document.getElementsByClassName("hidden_icon");
+          hiddenIcon2[index].style.display = "block ";
+        }
+
+        function resetImage(element, index) {
+          element.style.transform = "none";
+
+          const hiddenIcon2 = document.getElementsByClassName("hidden_icon");
+          hiddenIcon2[index].style.display = "none ";
+        }
+        // 공통 함수 끝
+      </script>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <a href="https://www.facebook.com/NetflixKR" target="_blank"
+            ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.instagram.com/netflixkr/" target="_blank"
+            ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+          ></a>
+          <a href="https://twitter.com/netflixkr" target="_blank"
+            ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCiEEF51uRAeZeCo8CJFhGWw/featured" target="_blank"
+            ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+          ></a>
+        </div>
+        <div class="box">
+          <div>
+            <a href="#">화면 해설</a>
+          </div>
+          <div>
+            <a href="#">고객센터</a>
+          </div>
+          <div>
+            <a href="#">기프트카드</a>
+          </div>
+          <div>
+            <a href="#">미디어 센터</a>
+          </div>
+          <div>
+            <a href="#">투자 정보(IR)</a>
+          </div>
+          <div>
+            <a href="#">입사 정보</a>
+          </div>
+          <div>
+            <a href="#">이용 약관</a>
+          </div>
+          <div>
+            <a href="#">개인정보</a>
+          </div>
+          <div>
+            <a href="#">법적 고지</a>
+          </div>
+          <div>
+            <a href="#">쿠키 설정</a>
+          </div>
+          <div>
+            <a href="#">회사 정보</a>
+          </div>
+          <div>
+            <a href="#">문의하기</a>
+          </div>
+        </div>
+        <div>
+          <button class="label-box">서비스 코드</button>
+          <div class="footer-wrapper">
+            넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587
+            <br />대표: 레지널드 숀 톰프슨<br />이메일 주소: korea@netflix.com <br />주소: 대한민국 서울특별시 종로구
+            우정국로26, 센트로폴리스 A동 20층 우편번호 03161 <br />사업자등록번호: 165-87-00119 <br />클라우드
+            호스팅:Amazon Web Services Inc.<br />
+            <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119" style="font-size: 11px"
+              >공정거래위원회 웹사이트</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

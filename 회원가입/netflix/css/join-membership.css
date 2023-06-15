@@ -1,0 +1,301 @@
+/* body */
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #01081d;
+    color: #fff;
+    margin: 0 auto;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;;
+    word-break: keep-all;
+}
+a {
+    color: #eee;
+}
+
+/* header */
+header {
+    width: 100vw;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+header .logo img {
+    width: 10rem;
+    margin-left: -10px;
+}
+header .right-items {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+/* select language */
+.select-lang {
+    min-width: auto;
+    width: auto;
+    position: relative;
+    padding: 6px 36px 0;
+    margin-top: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.select-lang > div {
+    position: absolute;
+    top: 36%;
+    left: 24%;
+}
+.select-lang > div > img {
+    width: 16px;
+    
+}
+.select-lang  > select {
+    padding: 0.4rem 2.25rem;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header .right-items .login-btn {
+    min-width: auto;
+    width: auto;
+    text-align: center;
+    font: 14px;
+    padding: .6em 1.2em;
+    margin-left: -10px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+/* section 01 */
+/* main */
+#container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#container .main-sec {
+    width: 100%;
+    min-height: 47.5rem;
+    background: radial-gradient(93.75% 105.88% at 0.39% 99.26%, rgba(150, 1, 7, 0.4) 1.42%, rgba(30, 1, 66, 0.51) 53.8%, rgba(13, 14, 32, 0) 100%),
+    linear-gradient(98.24deg, #1D0005 14.75%, rgba(0, 8, 29, 0.48) 100%),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/51e53f54-0d9f-40ec-9e05-c030def06ac9/400e792e-439b-4606-b384-d6d648de2f79/KR-ko-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+#container .main-sec  .text-contents {
+    width: 100%;
+    padding: 5% 10%;
+    font-size: 20px;
+}
+#container .main-sec .text-contents .textbox .top-txt h1 {
+    font-size: 88px;    
+    font-weight: bolder;
+}
+#container .main-sec .text-contents .textbox .top-txt p {
+    font-size: 32px;
+    line-height: 4;
+}
+/* netflix id: email address */
+#container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex: 1 1 auto;
+}
+#container form .netflix-id {
+    position: relative;
+    margin-top: 24px;
+}
+#container form .netflix-id label {
+    position: absolute;
+    left: 1.3%;
+    margin-top: 1.3%;
+    font-size: 16px;
+}
+#container form .netflix-id input {
+    position: absolute;
+    left: 0;
+    width: 420px;
+    height: 56px;
+    border: .8px solid #9e9c9c;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .6);
+}
+#container form button {
+    width: 150px;
+    height: 60px;
+    margin-left: 432px;
+    border-radius: 4px;
+    border: none;
+    background-color: #e50914;
+    font-size: 23px;
+    color: #fff;
+    padding-left: 1%;
+}
+#container form button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container form button a img {
+    width: 26px;
+}
+
+/* section 02 */
+/* contents */
+#container .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container .contents .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#container .contents .content:nth-of-type(2), #container .contents .content:nth-of-type(4) {
+    flex-direction: row-reverse;
+}
+#container .contents .content div:nth-of-type(2){
+    padding: 4% 0;
+    background: radial-gradient(circle at 60% 48%,rgba(150, 1, 78, 0.4) 18%, transparent 52% );
+}
+#container .contents .content .textbox {
+    width: 48%;
+    font-size: 20px;
+}
+#container .contents .content .textbox .title {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+
+/* section 03 */
+/* frequentQ  */
+.frequentQ {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+.frequentQ h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+.frequentQ .container {
+    padding: 0 12%;
+}
+.frequentQ div:nth-of-type(2) {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.frequentQ div:nth-of-type(2) ul {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.frequentQ div:nth-of-type(2) ul li {
+    margin-bottom: 16px;
+}
+.frequentQ div:nth-of-type(2) ul li .question {
+    width: 100%;
+    height: 84px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border: none;
+    background-color: #132144;
+    cursor: pointer;
+}
+.frequentQ div:nth-of-type(2) ul li .question h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+.frequentQ div:nth-of-type(2) ul li .question img {
+    width: 28px;
+}
+.frequentQ div:nth-of-type(2) ul li .question:hover {
+    background-color: #223362;
+}
+/* answer */
+.frequentQ div:nth-of-type(2) ul li .answer {
+    display: none;
+    background-color: #132144;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 24px;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: all ease-in .4s;
+}
+.frequentQ div:nth-of-type(2) ul li .answer span {
+    font-size: 24px;
+    line-height: 1.2;
+}
+.frequentQ div:nth-of-type(2) ul li .answer a {
+    text-decoration: underline;
+}
+/* form */
+.frequentQ div:nth-of-type(3) form h3 {
+    padding-top: 12px;
+} 
+
+/* footer */
+footer .container {
+    padding: 6% 16% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    opacity: .6;
+    font-size: 14px;
+}
+footer .container div {
+    padding-bottom: 3%;
+}
+footer .container .footer-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .container .footer-list ul li {
+    width: 25%;
+    line-height: 2;
+    text-decoration: underline;
+}
+footer .select-lang {
+    padding: 0;
+}
+footer .select-lang > div {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+footer .copy-text {
+    font-size: 12px;
+    line-height: 1.5;
+}

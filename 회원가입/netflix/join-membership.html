@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
+    <link rel="apple-touch-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png" />
+    <!-- title -->
+    <title>넷플릭스&nbsp;대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../netflix/css/reset.css" />
+    <link rel="stylesheet" href="../netflix/css/join-membership.css" />
+  </head>
+  <body>
+    <div id="wrappper">
+      <header>
+        <div class="logo">
+          <a href="/NETFLEIX(main.index).html"
+            ><img src="./img/join-membership/netflixLogo.png" alt="Netflix Logo"
+          /></a>
+        </div>
+        <div class="right-items">
+          <div class="select-lang">
+            <div>
+              <img src="./img/join-membership/globe.png" alt="select-language" />
+            </div>
+            <select name="select-language" id="selectLang">
+              <option selected lang="ko" label="한국어" value="ko-KR">한국어</option>
+              <option lang="en" label="영어" value="en-KR">영어</option>
+            </select>
+          </div>
+          <div class="login-btn">
+            <a href="/고객센터&로그인/넷플릭스로그인/login.html" role="button">로그인</a>
+          </div>
+        </div>
+      </header>
+      <div id="container">
+        <section class="main-sec">
+          <div class="text-contents">
+            <div class="textbox">
+              <div class="top-txt">
+                <h1>영화, 시리즈 등을 무제한으로</h1>
+                <p>다양한 디바이스에서 시청하세요. 언제든 해지할 수 있습니다.</p>
+              </div>
+              <div class="bottom-txt">
+                <form method="post">
+                  <p>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
+                  <div class="netflix-id">
+                    <div>
+                      <label for="">이메일 주소</label>
+                      <input type="email" autocomplete="email" name="email" minlength="5" maxlength="50" />
+                    </div>
+                  </div>
+                  <button>
+                    <a href="#">
+                      시작하기
+                      <img src="./img/join-membership/chevron.png" alt="start Netflix" />
+                    </a>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contents">
+          <div class="content">
+            <div class="textbox">
+              <h1 class="title">TV로 즐기세요</h1>
+              <h5>
+                스마트 Tv, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서 시청하세요.
+              </h5>
+            </div>
+            <div>
+              <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/enjoyOnTv/en.png"
+                alt="netflix tv"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <div class="textbox">
+              <h1 class="title">다양한 디바이스에서 시청하세요</h1>
+              <h5>각종 영화와 시리즈를 핸드폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요.</h5>
+            </div>
+            <div>
+              <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/watchEverywhere/en.png"
+                alt="other devices for Netflix"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <div class="textbox">
+              <h1 class="title">어린이 전용 프로필을 만들어 보세요</h1>
+              <h5>
+                자기만의 공간에서 좋아하는 캐릭터와 즐기는 신나는 모험. 자녀에게 이 특별한 경험을 선물하세요. 넷플릭스
+                회원이라면 무료입니다.
+              </h5>
+            </div>
+            <div>
+              <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/kids/ko.png"
+                alt="Netflix for kids"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <div class="textbox">
+              <h1 class="title">즐겨 보는 컨텐츠를 저장해 오프라인으로 시청하세요</h1>
+              <h5>광고 없는 멤버십에서만 가능합니다.</h5>
+            </div>
+            <div>
+              <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/download/ko.png"
+                alt="download contents"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="frequentQ">
+          <div class="container">
+            <div>
+              <h1>자주 묻는 질문</h1>
+            </div>
+            <div>
+              <ul id="question-list">
+                <li>
+                  <button onClick="shortAnswer01()" class="question active">
+                    <h3>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-01" />
+                  </button>
+                  <div class="answer" id="answer01">
+                    <span>
+                      넷플릭스는 장편의 영화, 다큐멘터리, 시리즈, 애니메이션, 각종 상을 수상한 넷플릭스 오리지널 등
+                      수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하실 수
+                      있습니다.
+                      <br />
+                      <br />
+                      <a href="#">넷플릭스 콘텐츠를 한 번 살펴보세요.</a>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button onClick="shortAnswer02()" class="question">
+                    <h3>넷플릭스란 무엇인가요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-02" />
+                  </button>
+                  <div class="answer" id="answer02">
+                    <span>
+                      넷플릭스는 각종 수상 경력에 빛나는 시리즈, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷
+                      연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.
+                      <br />
+                      저렴한 월 요금으로 원하는 시간에 원하는 콘텐츠를 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가
+                      준비 되어 있으며 매주 새로운 시리즈와 영화가 제공됩니다.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button onClick="shortAnswer03()" class="question">
+                    <h3>넷플릭스 요금은 얼마인가요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-03" />
+                  </button>
+                  <div class="answer" id="answer03">
+                    <span>
+                      스마트폰, 태블릿, 스마트 TV, 노트북, 스트치밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로
+                      넷플릭스를 시청하세요. 멤버십 요금은 월 5,500원부터 17,000원까지 다양합니다. 추가 비용이나 약정이
+                      없습니다.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button onClick="shortAnswer04()" class="question">
+                    <h3>어디에서 시청할 수 있나요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-04" />
+                  </button>
+                  <div class="answer" id="answer04">
+                    <span>
+                      언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로
+                      시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰,
+                      태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.
+                      <br />
+                      <br />
+                      IOS, Android, Window 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동
+                      중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button onClick="shortAnswer05()" class="question">
+                    <h3>멤버십을 해지하려면 어떻게 하나요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-05" />
+                  </button>
+                  <div class="answer" id="answer05">
+                    <span>
+                      넷플릿스는 부담 없이 간편합니다. 성가신 계약도, 약정도 없으니까요. 멤버십 해지도 온라인에서 클릭
+                      두 번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을 시작하거나 종료하세요.
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  <button onClick="shortAnswer06()" class="question">
+                    <h3>아이들이 넷플릭스를 봐도 좋을까요?</h3>
+                    <img src="./img/join-membership/plus.png" alt="look for answer" class="plus-06" />
+                  </button>
+                  <div class="answer" id="answer06">
+                    <span>
+                      멤버십에 넷플릭스 키즈 환경이 포함되어 있어 자녀가 자기만의 공간에서 가족용 시리즈와 영화를 즐기는
+                      동안 부모가 이를 관리할 수 있습니다.
+                      <br />
+                      <br />
+                      키즈 프로필과 더불어 PIN 번호를 이용한 자녀 보호 기능도 있어, 자녀가 시청할 수 있는 콘텐츠의
+                      관람등급을 제한하고 자녀의 시청을 원치 않는 특정 작품을 차단할 수도 있습니다.
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- form -->
+            <div id="moveonClick">
+              <form method="post" aria-label="넷플릭스에 가입하거나 멤버십을 재시작하세요.">
+                <h3>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
+                <div class="netflix-id">
+                  <div>
+                    <label for="">이메일 주소</label>
+                    <input type="email" autocomplete="email" name="email" minlength="5" maxlength="50" />
+                  </div>
+                  <button>
+                    <a href="#">
+                      시작하기
+                      <img src="./img/join-membership/chevron.png" alt="start Netflix" />
+                    </a>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="container">
+          <div>
+            <p>질문이 있으신가요? 문의 전화: &nbsp; <a href="tel:080-001-9584">080-001-9584</a></p>
+          </div>
+          <div class="footer-list">
+            <ul>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">고객 센터</a></li>
+              <li><a href="#">계정</a></li>
+              <li><a href="#">미디어 센터</a></li>
+              <li><a href="#">투자 정보(IR)</a></li>
+              <li><a href="#">입사 정보</a></li>
+              <li><a href="#">넷플릭스 지원 디바이스</a></li>
+              <li><a href="#">이용 약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">쿠키 설정</a></li>
+              <li><a href="#">회사 정보</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">속도 테스트</a></li>
+              <li><a href="#">법적 고지</a></li>
+              <li><a href="#">오직 넷플릭스에서</a></li>
+            </ul>
+          </div>
+          <div class="select-lang">
+            <div>
+              <img src="./img/join-membership/globe.png" alt="select-language" />
+            </div>
+            <select name="select-language" id="selectLang">
+              <option selected lang="ko" label="한국어" value="ko-KR">한국어</option>
+              <option lang="en" label="영어" value="en-KR">영어</option>
+            </select>
+          </div>
+          <div>
+            <p>넷플릭스 대한민국</p>
+          </div>
+          <div>
+            <div class="copy-text">
+              <p>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587</p>
+              <p>대표: 레지널드 숀 톰프슨</p>
+              <p>이메일 주소: korea@netflix.com</p>
+              <p>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</p>
+              <p>사업자등록번호: 165-87-00119</p>
+              <p>클라우드 호스팅: Amazon Web Services Inc.</p>
+              <p><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119">공정거래위원회 웹사이트</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS -->
+    <script src="../netflix/js/qna.js"></script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+/*(header)*/
+* {
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent); */
+  background-color: #000;
+  box-shadow: 10px 10px 10px 3px #769196;
+}
+header > div > a {
+  padding: 10px;
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+header > div > a:hover {
+  color: rgb(182, 176, 176);
+}
+header > div > a:first-child {
+  font-weight: bolder;
+  pointer-events: none;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+header > div > img:hover {
+  cursor: pointer;
+}
+header > div > div > img:hover {
+  cursor: pointer;
+}
+.container {
+  position: absolute;
+  left: 85%;
+  padding: 15px;
+}
+.container i {
+  padding: 10px;
+}
+/*(header)*/
+
+/*(main)*/
+body {
+  overflow-x: hidden;
+}
+main {
+  position: relative;
+  height: 200vh;
+  background-color: #141414;
+}
+main > .main_contents {
+  position: absolute;
+  height: 90vh;
+  background-image: url("./NETFLIX_WINDOW.ver_merged/asset/영화_메인/구미호뎐/구미호뎐\ 메인이미지.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 200;
+}
+
+/*메인 이미지 및 버튼 시작*/
+main > .main_contents > .main_text {
+  margin-left: 36px;
+  background-color: transparent;
+}
+main > .main_contents > .main_text > img {
+  margin-top: 150px;
+  background-color: transparent;
+}
+
+main > .main_contents > .main_text > .main_btn {
+  display: flex;
+  margin-top: 100px;
+  background-color: transparent;
+}
+main > .main_contents > .main_text > .main_btn > button {
+  height: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+#btn_play {
+  background-color: #fff;
+  color: #000;
+  width: 150px;
+  border: none;
+}
+
+#btn_play:hover {
+  background-color: rgba(189, 189, 189, 1);
+  border: none;
+}
+
+#btn_info {
+  display: inline-flex;
+  background-color: rgba(189, 189, 189, 0.5);
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+#btn_info:hover {
+  background-color: rgba(189, 189, 189, 0.4);
+  border: none;
+}
+
+#btn_info > img {
+  background-color: transparent;
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+/*메인 이미지 및 버튼*/
+
+/* 메인 영상과 겹치는 부분 시작 */
+main > .main_contents > .main_text > p {
+  margin-top: 160px;
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0);
+}
+main > .main_contents > .main_text > .main_imgs {
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main > .main_contents > .main_text > .main_imgs img:hover {
+  transition: transform 0.2s ease-in-out 0.5s;
+  transform: scale(1.4);
+}
+.inline_div {
+  position: relative;
+  display: inline;
+}
+.hidden_div {
+  display: inline;
+  opacity: 0;
+}
+.hidden_img:hover + .hidden_div {
+  transition: all 0.3s ease-in-out 0.5s;
+  position: absolute;
+  background-color: black;
+  top: 56px;
+  left: -67px;
+  width: 476px;
+  height: 200px;
+  opacity: 1;
+  z-index: 100;
+}
+/* hidden_img클래스 hover 후 hidden_div클래스 hover 유지하기*/
+.hidden_div:hover {
+  transition: all 0.3s ease-in-out 1s;
+  position: absolute;
+  background-color: black;
+  top: 56px;
+  left: -67px;
+  width: 476px;
+  height: 200px;
+  opacity: 1;
+  z-index: 100;
+}
+/* 메인 영상과 겹치는 부분 끝 */
+
+/* 메인 영상과 겹치지 않는 부분 시작 */
+main > .main_sub_contents {
+  position: absolute;
+  top: 960px;
+  margin-left: 36px;
+  white-space: nowrap;
+  z-index: 100;
+}
+main > .main_sub_contents > p {
+  font-size: 28px;
+  margin-top: 52px;
+}
+main > .main_sub_contents > div img:hover {
+  transition: transform 0.2s ease-in-out 1s;
+  transform: scale(1.4);
+}
+.inline_div2 {
+  position: relative;
+  display: inline;
+}
+.hidden_div2 {
+  display: inline;
+  opacity: 0;
+}
+
+.hidden_img2:hover + .hidden_div2 {
+  transition: all 0.3s ease-in-out 1s;
+  position: absolute;
+  background-color: black;
+  top: 56px;
+  left: -67px;
+  width: 476px;
+  height: 200px;
+  opacity: 1;
+  z-index: 100;
+}
+/* hidden_img2클래스 hover 후 hidden_div2클래스 hover 유지하기*/
+.hidden_div2:hover {
+  transition: all 0.3s ease-in-out 1s;
+  position: absolute;
+  background-color: black;
+  top: 56px;
+  left: -67px;
+  width: 476px;
+  height: 200px;
+  opacity: 1;
+  z-index: 100;
+}
+/* 메인 영상과 겹치지 않는 부분 끝 */
+
+/*공통 시작*/
+.hidden_icon > div img {
+  filter: brightness(0) invert(1);
+}
+.hidden_icon > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort {
+  margin: 20px 0 0 20px;
+}
+.sort2 {
+  margin: 20px 20px 0 0;
+}
+.p_sort {
+  margin-left: 20px;
+  margin-top: 28px;
+}
+.p_sort span {
+  color: green;
+}
+.p_sort2 {
+  margin-left: 20px;
+  margin-top: 44px;
+}
+/*공통 끝*/
+
+/*(main)*/
+
+/*(footer)*/
+footer {
+  background-color: #141414;
+  height: 50vh;
+  padding: 100px 0 0 100px;
+}
+footer > div > div > a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.footer-wrapper {
+  color: grey;
+  font-size: 11px;
+  line-height: 20px;
+}
+.label-box {
+  border: 1px solid grey;
+  color: grey;
+  /* width: 90px; */
+  height: 30px;
+  font-size: 13px;
+  margin: 5px 0 15px 0;
+  background-color: transparent;
+}
+.label-box:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(3, 35px);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+footer > div > div > div > a {
+  text-decoration: none;
+  color: grey;
+  font-size: 13px;
+}
+footer > div > div > div > a:hover {
+  text-decoration: underline;
+}
+footer > div > div > a > i {
+  font-size: 22px;
+}
+/*(footer)*/
+
+.correct_login {
+  cursor: pointer;
+  min-width: auto;
+  width: auto;
+  text-align: center;
+  font: 14px;
+  padding: 0.6em 1.2em;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+.correct_login > a {
+  text-decoration: none;
+}

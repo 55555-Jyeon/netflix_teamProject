@@ -1,0 +1,327 @@
+body,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 207.6px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+header > div {
+  margin: 0 87.6px;
+  padding: 20px 48px 0;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* button 전체에 공통 속성 지정 */
+.nav_bar button {
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 96px;
+}
+
+/* 첫 번째 button에 속성 지정 */
+.nav_bar button:nth-of-type(1) {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 5px 5px;
+}
+
+/* 첫 번째 버튼 hover */
+.nav_bar button:nth-of-type(1):hover {
+  background-color: white;
+  color: black;
+}
+
+/* 두 번째 button에 속성 지정 */
+.nav_bar button:nth-of-type(2) {
+  background-color: red;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 2px;
+}
+
+/* 두 번째 버튼 hover */
+.nav_bar button:nth-of-type(2):hover {
+  background-color: #e50914;
+}
+
+/* 고객 센터 */
+header h2 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+}
+/* input 속성 */
+.input_box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_box i {
+  position: relative;
+  left: 55px;
+}
+
+input {
+  width: 700px;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 10px 16px 10px 56px;
+  border-radius: 4px;
+}
+
+/* 여기서부터 main */
+
+main {
+  padding-bottom: 48px;
+}
+
+/* 첫 번째 영역에 background-color */
+.container {
+  background-color: rgb(249, 250, 250);
+  border-bottom: 1px solid gray;
+}
+
+.container > div {
+  margin: 0 87.6px;
+  padding: 24px 48px 0;
+}
+
+/* 첫 번째 버튼 영역에 margin */
+.main_firstbutton {
+  margin-top: 16px;
+}
+
+/* 첫 번째 버튼 영역에 있는 버튼에 공통 속성 */
+.main_firstbutton button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  border-radius: 2px;
+  min-width: 96px;
+  padding: 16px;
+}
+
+/* 첫 번째 버튼 */
+.main_firstbutton button:nth-of-type(1) {
+  background-color: red;
+  color: white;
+  border: red;
+  margin-right: 16px;
+}
+
+/* 첫 번째 버튼 hover */
+.main_firstbutton button:nth-of-type(1):hover {
+  background-color: #e50914;
+}
+
+/* 두 번째 버튼 */
+.main_firstbutton button:nth-of-type(2) {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  margin-right: 16px;
+}
+
+/* 두 번째 버튼 hover */
+.main_firstbutton button:nth-of-type(2):hover {
+  background-color: red;
+  color: white;
+}
+
+/* a태그 정렬 */
+.main_second_a {
+  display: flex;
+}
+
+/* a태그 속성(폰트, 색깔, 정렬 ...) */
+.main_second_a a {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  background-color: white;
+  margin-right: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* a태그 hover */
+.main_second_a a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.main_second_a a:hover i {
+  color: black;
+}
+
+/* 아이콘 속성 */
+i {
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+/* list 정렬 */
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 87.6px;
+  padding-top: 36px;
+}
+
+ul > h2 {
+  padding-bottom: 20px;
+}
+
+ul li {
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+/* main hover + animation */
+
+.list a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.arrow li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow a {
+  margin-right: 16px;
+}
+
+.arrow i {
+  color: red;
+}
+
+.list li:hover > a {
+  text-decoration: underline;
+  color: red;
+}
+
+.arrow li:hover i {
+  animation: move 0.25s 1;
+}
+
+@keyframes move {
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+/* 여기서부터 footer */
+footer {
+  height: 388.4px;
+  background: linear-gradient(10deg, rgba(229, 9, 20, 0) 58%, rgb(229, 9, 20) 128%), #000;
+  box-sizing: border-box;
+}
+
+.footer_container {
+  margin: 0 87.6px;
+  padding-left: 48px;
+  padding-top: 24px;
+}
+
+.footer_first_section {
+  color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 16px;
+}
+
+.footer_first_section > h3 {
+  margin: 0 32px 8px 0;
+}
+
+/* 문의하기 */
+.footer_first_section > button {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  min-width: 160px;
+  margin-bottom: 8px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 8px 20px;
+}
+
+.footer_first_section > button:hover {
+  background-color: gainsboro;
+}
+
+/* select option */
+.select i {
+  color: gray;
+  position: relative;
+  right: 35px;
+}
+
+.select_box {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 13px 45px 13px 16px;
+  background: none;
+  color: gray;
+  margin-top: 32px;
+  appearance: none;
+}
+
+.select > select:hover {
+  color: white;
+  background-color: gray;
+}
+
+footer ul {
+  margin-top: 32px;
+  padding-left: 0px;
+}
+
+footer a {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*
+1) footer에 있는 select:hover시 icon 색깔 흰색
+2) 미디어 쿼리
+*/

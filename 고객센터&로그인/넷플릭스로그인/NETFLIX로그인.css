@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/d28ea384-b394-4886-9aad-68e318cbbd68/KR-ko-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-size: 150%;
+}
+
+header {
+  margin-left: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login_box {
+  text-align: center;
+  width: 450px;
+  height: 660px;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  color: gray;
+}
+
+.login_box > h1 {
+  color: white;
+  text-align: left;
+  margin-left: 65px;
+  margin-top: 60px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box > input {
+  width: 320px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #333;
+  opacity: 1;
+  color: white;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 15px;
+  padding-top: 6px;
+}
+
+.input_box > input:nth-of-type(2) {
+  margin-top: 15px;
+}
+
+.login_box button {
+  width: 320px;
+  height: 50px;
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.check_box {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.check_box > label {
+  font-size: 15px;
+}
+
+.check_box > a {
+  font-size: 13px;
+  color: gray;
+}
+
+.main_word1 {
+  width: 320px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.main_word1 > a {
+  color: white;
+  font-weight: 500;
+}
+
+.main_word2 {
+  width: 320px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.main_word2 > a {
+  color: rgb(62, 62, 228);
+}
+
+footer {
+  height: 420px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: gray;
+}
+
+footer a {
+  color: gray;
+}
+
+.footer_box {
+  margin-left: 250px;
+  padding-top: 35px;
+}
+
+.footer_box > div:nth-of-type(1) > a {
+  color: gray;
+}
+
+.grid_box {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-auto-rows: 35px;
+  grid-auto-columns: 250px;
+  grid-template-areas:
+    "a b c d"
+    "e f . .";
+}
+
+.grid_box > a {
+  font-size: 13px;
+}
+
+.grid_a {
+  position: relative;
+  grid-area: a;
+}
+
+.grid_b {
+  position: relative;
+  grid-area: b;
+}
+
+.grid_c {
+  position: relative;
+  grid-area: c;
+}
+
+.grid_d {
+  position: relative;
+  grid-area: d;
+}
+
+.grid_e {
+  position: relative;
+  grid-area: e;
+}
+
+.grid_f {
+  position: relative;
+  grid-area: f;
+}
+
+.footer_box i {
+  color: gray;
+  position: relative;
+  right: 105px;
+}
+
+.select_box {
+  background-color: black;
+  color: gray;
+  padding: 15px 15px 15px 30px;
+  border-radius: 1px;
+  border: 1px solid gray;
+}
+
+.footer_box p {
+  font-size: 12px;
+}
